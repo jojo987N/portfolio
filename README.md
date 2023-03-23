@@ -1,143 +1,229 @@
 # 📗 Table of Contents
 
+  
+
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+
+- [🛠 Built With](#built-with)
+
+- [Tech Stack](#tech-stack)
+
+- [Key Features](#key-features)
+
+- [🚀 Live Demo](#live-demo)
+
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+
+- [Setup](#setup)
+
+- [Prerequisites](#prerequisites)
+
+- [Install](#install)
+
+- [Usage](#usage)
+
+- [Run tests](#run-tests)
+
+- [Deployment](#triangular_flag_on_post-deployment)
+
 - [👥 Authors](#authors)
+
 - [🔭 Future Features](#future-features)
+
 - [🤝 Contributing](#contributing)
+
 - [⭐️ Show your support](#support)
+
 - [🙏 Acknowledgements](#acknowledgements)
+
 - [❓ FAQ (OPTIONAL)](#faq)
+
 - [📝 License](#license)
 
-# 📖 # Hello Microverse
+  
 
-**Hello Microverse** is a HTML and CSS project repository with best practices, follow Github flow and a descriptive and easy to understand README file .
+# 📖 # # Portfolio: setup and mobile first
 
-## 🛠 Built With <a name="built-with"></a>
+  
 
-### Tech Stack <a name="tech-stack"></a>
+**# Portfolio: setup and mobile first** is the first 2 sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices,  Github flow and a descriptive and easy to understand README file .
+
+  
+
+## 🛠 Built With 
+
+  
+
+### Tech Stack 
+
+  
 
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="">HTML</a></li>
-  </ul>
-  <ul>
-    <li><a href="">CSS</a></li>
-  </ul>
+
+<summary>Client</summary>
+
+<ul>
+
+<li><a  href="">HTML</a></li>
+
+</ul>
+
+<ul>
+
+<li><a  href="">CSS</a></li>
+
+</ul>
+
 </details>
+
+  
 
 ### Key Features <a name="key-features"></a>
 
-- **Homepage**
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+-  **Toolbar**
+- **Headline**
 
-## 🚀 Live Demo <a name="live-demo"></a>
+  
 
-- [Live Demo Link](https://jojo987n.github.io/hello-microverse/)
+## 🚀 Live Demo 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 
-## 💻 Getting Started <a name="getting-started"></a>
+- [Live Demo Link](https://jojo987n.github.io/portfolio/)
+  
+
+## 💻 Getting Started 
 
 To get a local copy up and running, follow these steps.
 
+  
+
 ### Prerequisites
 
+  
+
 In order to run this project you need:
+
 sh
+
 npm install
+
+  
 
 ### Setup
 
+  
+
 Clone this repository to your desired folder:
+
 sh
-  cd hello-microverse
-  git clone git@github.com:jojo987N/hello-microverse.git
+
+cd portfolio
+
+git clone git@github.com:jojo987N/portfolio.git
+
+  
 
 ### Install
 
+  
+
 Install this project with:
+
 sh
-  cd Hello-microverse
-  npm install
+
+cd portfolio
+
+npm install
+
+  
 
 ### Usage
 
+  
+
 To run the project, execute the following command:
+
+  
 
 ### Deployment
 
+  
+
 You can deploy this project using:
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 👥 Authors 
 
-## 👥 Authors <a name="authors"></a>
+  
 
 👤 **Author1**
 
+  
+
 - GitHub: [@jojo987N](https://github.com/jojo987N)
+
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🔭 Future Features 
 
-## 🔭 Future Features <a name="future-features"></a>
+  
 
-- [ ] **About Page**
-- [ ] **Services Page**
-- [ ] **Contact us Page**
+- [ ] **Works Page**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] **About My Self Page**
 
-## 🤝 Contributing <a name="contributing"></a>
+- [ ] **Contact Me Page**
+
+## 🤝 Contributing 
 
 Contributions, issues, and feature requests are welcome!
 
+  
+
 Feel free to check the [issues page](../../issues/).
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## ⭐️ Show your support 
 
-## ⭐️ Show your support <a name="support"></a>
-
-Everybody is welcome to suggest changes in Hello Microverse files.
+Everybody is welcome to suggest changes in Hello portfolio files.
 
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
+  
+  
+## 🙏 Acknowledgments 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+  
 
 I would like to thank Microverse
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## ❓ FAQ (OPTIONAL) 
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+  
 
-- **[Question_1]**
+-  **[Question_1]**
 
-  - Setup Node js
+  
 
-- **[Question_2]**
+- Setup Node js
 
-  - Setup Linters
+  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+-  **[Question_2]**
 
-## 📝 License <a name="license"></a>
+  
+
+- Setup Linters
+  
+
+## 📝 License 
+
+  
 
 This project is [MIT](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
