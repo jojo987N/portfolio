@@ -64,13 +64,13 @@
 
 <ul>
 
-<li><a  href="">HTML</a></li>
+<li><a  href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
 
 </ul>
 
 <ul>
 
-<li><a  href="">CSS</a></li>
+<li><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
 
 </ul>
 
@@ -91,7 +91,7 @@
 
   
 
-- [Live Demo Link](https://jojo987n.github.io/portfolio/)
+- Not yet available
   
 
 ## 💻 Getting Started 
