@@ -83,16 +83,8 @@ header .logo a:visited {
 
 .headline ul {
   list-style-type: none;
-
-  /* margin: 0%; */
   padding: 0%;
-
-  /* width: 100%; */
   margin-right: 19px;
-
-  /* width: 100px; */
-
-  /* border: 1px solid black; */
   height: 130px;
   padding-left: 25px;
   padding-right: 25px;
