@@ -226,4 +226,4 @@ I would like to thank Microverse
 
   
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
