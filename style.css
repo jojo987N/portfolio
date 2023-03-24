@@ -1,6 +1,5 @@
-
 body {
-  background: url('img/header-background-mobile.png'), #e5e5e5;
+  background: #e5e5e5;
   margin: 0%;
 }
 
@@ -10,7 +9,8 @@ header {
   justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: 44px;
+  padding-top: 44px;
+  background: #fff;
 }
 
 header .logo {
@@ -30,16 +30,22 @@ header .logo a:visited {
   color: inherit;
 }
 
-.headline {
-  background-image: url('./img/header-shapes-mobile.png');
+.headline-bg {
+  background: url('./img/header-shapes-mobile.png'), #fff;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 20px;
-  border: 1px solid white;
-  border-bottom-left-radius: 80px;
+  border-bottom-left-radius: 70px;
+  padding-bottom: 130px;
+}
+.headline {
+  border: 1px solid #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+   
 }
 
-.headline h1 {
+h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -47,9 +53,13 @@ header .logo a:visited {
   line-height: 52px;
   overflow-wrap: break-word;
   margin-top: 114px;
+  margin-bottom: 0px;
+  
+  
+}
+
+.headline-bg h1{
   color: #172b4d;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .second-text {
@@ -58,10 +68,11 @@ header .logo a:visited {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
   overflow-wrap: break-word;
-  padding-left: 25px;
-  padding-right: 25px;
+  
+}
+.headline .second-text{
+  color: #344563;
 }
 
 .third-text {
@@ -72,31 +83,213 @@ header .logo a:visited {
   line-height: 24px;
   color: #7f8cff;
   margin-top: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
+  
 }
 
-.media-icon1 {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.headline ul {
+.media-icon{
   list-style-type: none;
   padding: 0%;
   margin-right: 19px;
-  height: 130px;
-  padding-left: 25px;
-  padding-right: 25px;
+  height: 30px;
+  display: flex;
+  gap: 19px;
+}
+ 
+
+.Works {
+  display: grid;
+  row-gap: 5.5em;
+  margin-top: 7.125em;
+  margin-bottom: 7.125em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  
+
 }
 
-.headline ul li {
-  float: left;
-  vertical-align: middle;
+.Works .card {
+  border: 1px solid #DFE1E6;
+  padding: 1em;
+  background: #FFFFFF;
+  border-radius: 16px;
+
 }
 
-.headline img {
-  margin-right: 19px;
+.Works .card h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  width: 70%;
+}
+.Works .card .frame2 {
+  display: flex;
+  padding: 0%;
+  gap: 12px;
+  
+}
+.Works .card ul {
+  list-style-type: none;
+}
+.Works .card .frame2 li {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+color: #344563;
+}
+.Works .card p {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #344563;
+}
+.tags{
+  display: flex;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 214px;
+height: 24px;
+}
+.tag{
+padding: 4px 12px;
+background: #EBEBFF;
+border-radius: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.03em;
+color: #6070FF;
+}
+.action{
+  padding-top: 12px ;
+  padding-bottom: 12px;
   margin-top: 12px;
-  margin-bottom: 138px;
+}
+button{
+padding: 12px;
+border: 1px solid #6070FF;
+border-radius: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #396DF2;
+
+}
+button:hover{
+  
+
+background: #6070FF;
+
+ 
+color: #FFFFFF;
+cursor: pointer;
+  
+  }
+button:active{
+background: #2230D2;
+}
+.about-myself{
+  background: #fff;
+  border-top-right-radius: 70px;
+  padding-bottom: 100px;
+  
+}
+.about-myself h1{
+    color: #172b4d;
+}
+.skills .label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 35px 12px 0px;
+  padding: 12px 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.skill + .skill{
+  border-bottom: 1px solid #DFE1E6;
+}
+.skills{
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+   
+}
+.skills .items{
+  padding: 0%;
+  list-style-type: none;
+  margin: 12px 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills .items li{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 9px 12px;
+  background: #F7F7F9;
+  border-radius: 8px;
+}
+
+.contact-me{
+  background: url('./img/contact-form-shapes-mobile.png'), #6070FF;
+  background-position: 145px 5px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 45px;
+  border-top-left-radius: 70px;
+}
+
+.contact-me h1{
+  color: #fff;
+  
+}
+
+.contact-me h1, .contact-me .second-text{
+  text-align: center;
+  margin-right: 30px;
+   margin-left: 30px;
+}
+.contact-me .second-text{
+  color: #EBEBFF
+
+} 
+.form{
+  margin-right: 30px;
+   margin-left: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px
+}
+input, textarea{
+  padding: 15px 38px 15px 16px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+.contact-me button{
+  width: 142px;
 }
