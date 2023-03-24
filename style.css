@@ -45,7 +45,7 @@ header .logo a:visited {
   padding-right: 25px;
 }
 
-h1 {
+h1, .about-myself h2{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -56,7 +56,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.headline-bg h1 {
+.headline-bg h1, .about-myself h2{
   color: #172b4d;
 }
 
