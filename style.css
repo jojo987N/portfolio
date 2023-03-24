@@ -38,11 +38,11 @@ header .logo a:visited {
   border-bottom-left-radius: 70px;
   padding-bottom: 130px;
 }
+
 .headline {
   border: 1px solid #fff;
   padding-left: 25px;
   padding-right: 25px;
-   
 }
 
 h1 {
@@ -53,12 +53,10 @@ h1 {
   line-height: 52px;
   overflow-wrap: break-word;
   margin-top: 114px;
-  margin-bottom: 0px;
-  
-  
+  margin-bottom: 0;
 }
 
-.headline-bg h1{
+.headline-bg h1 {
   color: #172b4d;
 }
 
@@ -69,9 +67,9 @@ h1 {
   font-size: 16px;
   line-height: 24px;
   overflow-wrap: break-word;
-  
 }
-.headline .second-text{
+
+.headline .second-text {
   color: #344563;
 }
 
@@ -83,10 +81,9 @@ h1 {
   line-height: 24px;
   color: #7f8cff;
   margin-top: 12px;
-  
 }
 
-.media-icon{
+.media-icon {
   list-style-type: none;
   padding: 0%;
   margin-right: 19px;
@@ -94,7 +91,6 @@ h1 {
   display: flex;
   gap: 19px;
 }
- 
 
 .Works {
   display: grid;
@@ -103,138 +99,150 @@ h1 {
   margin-bottom: 7.125em;
   margin-right: 1.5em;
   margin-left: 1.5em;
-  
-
 }
 
 .Works .card {
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   padding: 1em;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 16px;
-
 }
 
 .Works .card h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   width: 70%;
 }
+
 .Works .card .frame2 {
   display: flex;
   padding: 0%;
   gap: 12px;
-  
 }
+
 .Works .card ul {
   list-style-type: none;
 }
-.Works .card .frame2 li {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #344563;
-}
-.Works .card p {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #344563;
-}
-.tags{
+
+.skills .items li {
   display: flex;
-align-items: center;
-padding: 0px;
-gap: 8px;
-width: 214px;
-height: 24px;
+  align-items: center;
+  gap: 16px;
+  padding: 9px 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
 }
-.tag{
-padding: 4px 12px;
-background: #EBEBFF;
-border-radius: 8px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.03em;
-color: #6070FF;
+
+.Works .card .frame2 li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
-.action{
-  padding-top: 12px ;
+
+.Works .card p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 214px;
+  height: 24px;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.action {
+  padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 12px;
 }
-button{
-padding: 12px;
-border: 1px solid #6070FF;
-border-radius: 8px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #396DF2;
 
+button {
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
 }
-button:hover{
-  
 
-background: #6070FF;
-
- 
-color: #FFFFFF;
-cursor: pointer;
-  
-  }
-button:active{
-background: #2230D2;
+button:hover {
+  background: #6070ff;
+  color: #fff;
+  cursor: pointer;
 }
-.about-myself{
+
+button:active {
+  background: #2230d2;
+}
+
+.about-myself {
   background: #fff;
   border-top-right-radius: 70px;
   padding-bottom: 100px;
-  
 }
-.about-myself h1{
-    color: #172b4d;
+
+.about-myself h1 {
+  color: #172b4d;
 }
-.skills .label{
+
+.skills .label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 12px 35px 12px 0px;
+  margin: 12px 35px 12px 0;
   padding: 12px 12px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
-.skill + .skill{
-  border-bottom: 1px solid #DFE1E6;
+.skill + .skill {
+  border-bottom: 1px solid #dfe1e6;
 }
-.skills{
+
+.skills {
   list-style-type: none;
   padding: 0%;
   display: flex;
   flex-direction: column;
-   
 }
-.skills .items{
+
+.skills .items {
   padding: 0%;
   list-style-type: none;
   margin: 12px 20px 20px 10px;
@@ -243,19 +251,10 @@ background: #2230D2;
   gap: 12px;
 }
 
-.skills .items li{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 9px 12px;
-  background: #F7F7F9;
-  border-radius: 8px;
-}
-
-.contact-me{
-  background: url('./img/contact-form-shapes-mobile.png'), #6070FF;
+.contact-me {
+  background: url('./img/contact-form-shapes-mobile.png'), #6070ff;
   background-position: 145px 5px;
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -264,32 +263,36 @@ background: #2230D2;
   border-top-left-radius: 70px;
 }
 
-.contact-me h1{
+.contact-me h1 {
   color: #fff;
-  
 }
 
-.contact-me h1, .contact-me .second-text{
+.contact-me h1,
+.contact-me .second-text {
   text-align: center;
   margin-right: 30px;
-   margin-left: 30px;
+  margin-left: 30px;
 }
-.contact-me .second-text{
-  color: #EBEBFF
 
-} 
-.form{
-  margin-right: 30px;
-   margin-left: 30px;
-   display: flex;
-   flex-direction: column;
-   gap: 20px
+.contact-me .second-text {
+  color: #ebebff;
 }
-input, textarea{
+
+.form {
+  margin-right: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
   padding: 15px 38px 15px 16px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
-.contact-me button{
+
+.contact-me button {
   width: 142px;
 }
