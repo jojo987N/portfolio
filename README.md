@@ -2,79 +2,145 @@
 
   
 
+  
+
 - [📖 About the Project](#about-project)
+
+  
 
 - [🛠 Built With](#built-with)
 
+  
+
 - [Tech Stack](#tech-stack)
+
+  
 
 - [Key Features](#key-features)
 
+  
+
 - [🚀 Live Demo](#live-demo)
+
+  
 
 - [💻 Getting Started](#getting-started)
 
+  
+
 - [Setup](#setup)
+
+  
 
 - [Prerequisites](#prerequisites)
 
+  
+
 - [Install](#install)
+
+  
 
 - [Usage](#usage)
 
+  
+
 - [Run tests](#run-tests)
+
+  
 
 - [Deployment](#triangular_flag_on_post-deployment)
 
+  
+
 - [👥 Authors](#authors)
+
+  
 
 - [🔭 Future Features](#future-features)
 
+  
+
 - [🤝 Contributing](#contributing)
+
+  
 
 - [⭐️ Show your support](#support)
 
+  
+
 - [🙏 Acknowledgements](#acknowledgements)
 
+  
+
 - [❓ FAQ (OPTIONAL)](#faq)
+
+  
 
 - [📝 License](#license)
 
   
 
-# 📖 # # Portfolio: setup and mobile first
+  
+
+# 📖 # # Finish mobile version
 
   
 
-**# Portfolio: setup and mobile first** is the first 2 sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices,  Github flow and a descriptive and easy to understand README file .
+  
+
+**# Portfolio: setup and mobile first** is the  sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file .
 
   
 
-## 🛠 Built With 
+  
+
+## 🛠 Built With
 
   
 
-### Tech Stack 
+  
+
+### Tech Stack
+
+  
 
   
 
 <details>
 
+  
+
 <summary>Client</summary>
 
+  
+
 <ul>
+
+  
 
 <li><a  href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
 
+  
+
 </ul>
+
+  
 
 <ul>
 
+  
+
 <li><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+
+  
 
 </ul>
 
+  
+
 </details>
+
+  
 
   
 
@@ -82,21 +148,37 @@
 
   
 
+  
+
 -  **Toolbar**
-- **Headline**
+
+-  **Headline**
+
+-  **Works Section**
+
+-  **About myself**
 
   
 
-## 🚀 Live Demo 
+  
+
+## 🚀 Live Demo
+
+  
 
   
 
 - Not yet available
+
   
 
-## 💻 Getting Started 
+## 💻 Getting Started
+
+  
 
 To get a local copy up and running, follow these steps.
+
+  
 
   
 
@@ -104,11 +186,19 @@ To get a local copy up and running, follow these steps.
 
   
 
+  
+
 In order to run this project you need:
+
+  
 
 sh
 
+  
+
 npm install
+
+  
 
   
 
@@ -116,13 +206,23 @@ npm install
 
   
 
+  
+
 Clone this repository to your desired folder:
+
+  
 
 sh
 
+  
+
 cd portfolio
 
+  
+
 git clone git@github.com:jojo987N/portfolio.git
+
+  
 
   
 
@@ -130,13 +230,23 @@ git clone git@github.com:jojo987N/portfolio.git
 
   
 
+  
+
 Install this project with:
+
+  
 
 sh
 
+  
+
 cd portfolio
 
+  
+
 npm install
+
+  
 
   
 
@@ -144,7 +254,11 @@ npm install
 
   
 
+  
+
 To run the project, execute the following command:
+
+  
 
   
 
@@ -152,10 +266,15 @@ To run the project, execute the following command:
 
   
 
-You can deploy this project using:
   
 
-## 👥 Authors 
+You can deploy this project using:
+
+  
+
+## 👥 Authors
+
+  
 
   
 
@@ -163,47 +282,75 @@ You can deploy this project using:
 
   
 
+  
+
 - GitHub: [@jojo987N](https://github.com/jojo987N)
+
+  
 
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
   
 
-## 🔭 Future Features 
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+  
+
+## 🔭 Future Features
+
+  
 
   
 
 - [ ] **Works Page**
 
+  
+
 - [ ] **About My Self Page**
+
+  
 
 - [ ] **Contact Me Page**
 
-## 🤝 Contributing 
+  
+
+## 🤝 Contributing
+
+  
 
 Contributions, issues, and feature requests are welcome!
 
   
 
-Feel free to check the [issues page](../../issues/).
   
 
-## ⭐️ Show your support 
+Feel free to check the [issues page](../../issues/).
+
+  
+
+## ⭐️ Show your support
+
+  
 
 Everybody is welcome to suggest changes in Hello portfolio files.
 
+  
+
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
+
+## 🙏 Acknowledgments
+
   
-  
-## 🙏 Acknowledgments 
 
   
 
 I would like to thank Microverse
+
   
 
-## ❓ FAQ (OPTIONAL) 
+## ❓ FAQ (OPTIONAL)
+
+  
 
   
 
@@ -211,7 +358,11 @@ I would like to thank Microverse
 
   
 
+  
+
 - Setup Node js
+
+  
 
   
 
@@ -219,10 +370,15 @@ I would like to thank Microverse
 
   
 
-- Setup Linters
   
 
-## 📝 License 
+- Setup Linters
+
+  
+
+## 📝 License
+
+  
 
   
 
