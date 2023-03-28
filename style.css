@@ -254,13 +254,14 @@ button:active {
 }
 
 .contact-me {
-  background: url('./img/contact-form-shapes-mobile.png'), #6070ff;
-  background-position: 145px 5px;
+  background: url("./img/Ellipse-3.png"), url("./img/Rectangle-4.png"), url("./img/Rectangle-7.png"), url("./img/Ellipse-5.png") #6070FF;
+  /* background-position: 145px 5px; */
+  background-position: 100% 10%, 100% 5.5%, 88% 91.2%, 78% 92%;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   padding-bottom: 45px;
   border-top-left-radius: 70px;
 }
@@ -315,9 +316,4 @@ textarea::placeholder {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
 }
