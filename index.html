@@ -134,7 +134,8 @@
     <button>Get my resume</button>
 
     <ul class="skills">
-      <li class="skill"><span class="label">Languages <img src="img/Icon-Chevron-Down.png" alt="Icon Chevron Down "></span>
+      <li class="skill"><span class="label">Languages <img src="img/Icon-Chevron-Down.png"
+            alt="Icon Chevron Down "></span>
         <ul class="items">
           <li><img src="img/javascript.png" alt="javascript"> JavaScript</li>
           <li><img src="img/html.png" alt="html"> HTML</li>
@@ -151,14 +152,14 @@
     <p class="second-text">If you have an application you are interested in developing, a feature that you need built
       or a project that needs coding.
       I’d love to help with it!</p>
-    <div class="form">
-      <input type="text" placeholder="Lorem Ipsum">
-      <input type="text" placeholder="Loremipsum@gmail.com">
-      <textarea placeholder="Write your message here..." rows="10"></textarea>
+    <form class="form" action="https://formspree.io/f/meqwlynw" method="post">
+      <input type="text" placeholder="Lorem Ipsum" required maxlength="30">
+      <input type="text" placeholder="Loremipsum@gmail.com" required>
+      <textarea placeholder="Write your message here..." rows="10" maxlength="500" required></textarea>
       <div class="button">
-        <button>Get in touch</button>
+        <button type="submit">Get in touch</button>
       </div>
-    </div>
+    </form>
 
 
   </section>
