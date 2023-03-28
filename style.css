@@ -234,7 +234,7 @@ button:active {
   color: #000;
 }
 
-.skill+.skill {
+.skill + .skill {
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -255,13 +255,16 @@ button:active {
 }
 
 .contact-me {
-  background: url('./img/contact-form-shapes-mobile.png'), #6070ff;
-  background-position: 145px 5px;
+  background: url("./img/Ellipse-3.png"), url("./img/Rectangle-4.png"), url("./img/Rectangle-7.png"), url("./img/Ellipse-5.png") #6070ff;
+
+  /* background-position: 145px 5px; */
+  background-position: 100% 10%, 100% 5.5%, 88% 91.2%, 78% 92%;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-size: contain;
+
+  /* background-size: contain; */
   padding-bottom: 45px;
   border-top-left-radius: 70px;
 }
@@ -301,23 +304,21 @@ textarea {
 }
 
 input::placeholder {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 textarea::placeholder {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
-
+  color: #b3bac5;
 }
 .button{
   display: flex;
