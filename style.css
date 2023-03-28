@@ -43,6 +43,7 @@ header .logo a:visited {
   border: 1px solid #fff;
   padding-left: 25px;
   padding-right: 25px;
+
 }
 
 h1,
@@ -324,6 +325,15 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  .headline-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headline-desktop .container {
+    /* border: 1px solid yellow; */
+    width: 60%;
+  }
   .headline-bg {
     background: url('./img/header-bg-desktop.png'), #fff;
     background-size: cover;
@@ -336,10 +346,9 @@ textarea::placeholder {
     /* align-items: center; */
   }
   h1{
-    border:1px solid black;
-    width: 30%;
+    /* border:1px solid black; */
+    width: 50%;
+    margin-top: 289px;
   }
-  .second-text{
-    width: 60%;
-  }
+  
 }
