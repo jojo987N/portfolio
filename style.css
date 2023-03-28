@@ -212,7 +212,7 @@ button:active {
 .about-myself {
   background: #fff;
   border-top-right-radius: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
 }
 
 .about-myself h1 {
@@ -321,4 +321,25 @@ textarea::placeholder {
 .button{
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .headline-bg {
+    background: url('./img/header-bg-desktop.png'), #fff;
+    background-size: cover;
+    
+  }
+  .headline{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  h1{
+    border:1px solid black;
+    width: 30%;
+  }
+  .second-text{
+    width: 60%;
+  }
 }
