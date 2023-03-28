@@ -233,7 +233,7 @@ button:active {
   color: #000;
 }
 
-.skill+.skill {
+.skill + .skill {
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -300,25 +300,24 @@ textarea {
 }
 
 input::placeholder {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 textarea::placeholder {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
-
+  color: #b3bac5;
 }
-.button{
+
+.button {
   display: flex;
   justify-content: center;
 }
