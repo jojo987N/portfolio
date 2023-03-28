@@ -233,7 +233,7 @@ button:active {
   color: #000;
 }
 
-.skill + .skill {
+.skill+.skill {
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -297,4 +297,28 @@ textarea {
 
 .contact-me button {
   width: 142px;
+}
+
+input::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172B4D;
+
+}
+
+textarea::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
+
+}
+.button{
+  display: flex;
+  justify-content: center;
 }
