@@ -336,7 +336,8 @@ textarea::placeholder {
   }
   .headline-bg {
     background: url('./img/header-bg-desktop.png'), #fff;
-    background-size: cover;
+    background-size: contain;
+    background-position: 0% 50%;
     
   }
   .headline{
