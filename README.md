@@ -1,10 +1,8 @@
 # 📗 Table of Contents
 
-  
-
-  
-
 - [📖 About the Project](#about-project)
+
+  
 
   
 
@@ -12,7 +10,11 @@
 
   
 
+  
+
 - [Tech Stack](#tech-stack)
+
+  
 
   
 
@@ -20,7 +22,11 @@
 
   
 
+  
+
 - [🚀 Live Demo](#live-demo)
+
+  
 
   
 
@@ -28,7 +34,11 @@
 
   
 
+  
+
 - [Setup](#setup)
+
+  
 
   
 
@@ -36,7 +46,11 @@
 
   
 
+  
+
 - [Install](#install)
+
+  
 
   
 
@@ -44,7 +58,11 @@
 
   
 
+  
+
 - [Run tests](#run-tests)
+
+  
 
   
 
@@ -52,7 +70,11 @@
 
   
 
+  
+
 - [👥 Authors](#authors)
+
+  
 
   
 
@@ -60,7 +82,11 @@
 
   
 
+  
+
 - [🤝 Contributing](#contributing)
+
+  
 
   
 
@@ -68,11 +94,17 @@
 
   
 
+  
+
 - [🙏 Acknowledgements](#acknowledgements)
 
   
 
+  
+
 - [❓ FAQ (OPTIONAL)](#faq)
+
+  
 
   
 
@@ -82,13 +114,19 @@
 
   
 
-# 📖 # # Finish mobile version
+  
+
+# 📖 # # # Portfolio: desktop version
 
   
 
   
 
-**# Portfolio: setup and mobile first** is the  sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file .
+  
+
+**# # Portfolio: desktop version** is the sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file .
+
+  
 
   
 
@@ -100,7 +138,11 @@
 
   
 
+  
+
 ### Tech Stack
+
+  
 
   
 
@@ -110,11 +152,17 @@
 
   
 
+  
+
 <summary>Client</summary>
 
   
 
+  
+
 <ul>
+
+  
 
   
 
@@ -122,7 +170,11 @@
 
   
 
+  
+
 </ul>
+
+  
 
   
 
@@ -130,7 +182,11 @@
 
   
 
+  
+
 <li><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+
+  
 
   
 
@@ -138,7 +194,11 @@
 
   
 
+  
+
 </details>
+
+  
 
   
 
@@ -150,13 +210,24 @@
 
   
 
--  **Toolbar**
+  
+
+-  **Desktop Version**
+
+  
 
 -  **Headline**
 
+  
+
 -  **Works Section**
 
+  
+
 -  **About myself**
+- **Contact Form**
+
+  
 
   
 
@@ -168,7 +239,11 @@
 
   
 
+  
+
 - Not yet available
+
+  
 
   
 
@@ -176,7 +251,11 @@
 
   
 
+  
+
 To get a local copy up and running, follow these steps.
+
+  
 
   
 
@@ -188,7 +267,11 @@ To get a local copy up and running, follow these steps.
 
   
 
+  
+
 In order to run this project you need:
+
+  
 
   
 
@@ -196,7 +279,11 @@ sh
 
   
 
+  
+
 npm install
+
+  
 
   
 
@@ -208,7 +295,11 @@ npm install
 
   
 
+  
+
 Clone this repository to your desired folder:
+
+  
 
   
 
@@ -216,11 +307,17 @@ sh
 
   
 
+  
+
 cd portfolio
 
   
 
+  
+
 git clone git@github.com:jojo987N/portfolio.git
+
+  
 
   
 
@@ -232,7 +329,11 @@ git clone git@github.com:jojo987N/portfolio.git
 
   
 
+  
+
 Install this project with:
+
+  
 
   
 
@@ -240,11 +341,17 @@ sh
 
   
 
+  
+
 cd portfolio
 
   
 
+  
+
 npm install
+
+  
 
   
 
@@ -256,7 +363,11 @@ npm install
 
   
 
+  
+
 To run the project, execute the following command:
+
+  
 
   
 
@@ -268,11 +379,17 @@ To run the project, execute the following command:
 
   
 
+  
+
 You can deploy this project using:
 
   
 
+  
+
 ## 👥 Authors
+
+  
 
   
 
@@ -284,7 +401,11 @@ You can deploy this project using:
 
   
 
+  
+
 - GitHub: [@jojo987N](https://github.com/jojo987N)
+
+  
 
   
 
@@ -292,7 +413,11 @@ You can deploy this project using:
 
   
 
+  
+
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+  
 
   
 
@@ -302,7 +427,11 @@ You can deploy this project using:
 
   
 
+  
+
 - [ ] **Works Page**
+
+  
 
   
 
@@ -310,11 +439,17 @@ You can deploy this project using:
 
   
 
+  
+
 - [ ] **Contact Me Page**
 
   
 
+  
+
 ## 🤝 Contributing
+
+  
 
   
 
@@ -324,7 +459,11 @@ Contributions, issues, and feature requests are welcome!
 
   
 
+  
+
 Feel free to check the [issues page](../../issues/).
+
+  
 
   
 
@@ -332,13 +471,21 @@ Feel free to check the [issues page](../../issues/).
 
   
 
+  
+
 Everybody is welcome to suggest changes in Hello portfolio files.
+
+  
 
   
 
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
 
+  
+
 ## 🙏 Acknowledgments
+
+  
 
   
 
@@ -348,7 +495,11 @@ I would like to thank Microverse
 
   
 
+  
+
 ## ❓ FAQ (OPTIONAL)
+
+  
 
   
 
@@ -360,7 +511,11 @@ I would like to thank Microverse
 
   
 
+  
+
 - Setup Node js
+
+  
 
   
 
@@ -372,11 +527,17 @@ I would like to thank Microverse
 
   
 
+  
+
 - Setup Linters
 
   
 
+  
+
 ## 📝 License
+
+  
 
   
 
