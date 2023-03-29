@@ -43,11 +43,11 @@ header .logo a:visited {
   border: 1px solid #fff;
   padding-left: 25px;
   padding-right: 25px;
-
 }
 
 h1,
-.about-myself h2 {
+.about-myself h2,
+.contact-me h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -93,6 +93,8 @@ h1,
   height: 30px;
   display: flex;
   gap: 19px;
+
+  /* display: none; */
 }
 
 .Works {
@@ -111,6 +113,13 @@ h1,
   border-radius: 16px;
 }
 
+.contact-me h2 {
+  color: #fff;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 .Works .card h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -118,7 +127,8 @@ h1,
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  width: 70%;
+
+  /* width: 70%; */
 }
 
 .Works .card .frame2 {
@@ -214,6 +224,9 @@ button:active {
   background: #fff;
   border-top-right-radius: 70px;
   padding-bottom: 130px;
+  padding-top: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .about-myself h1 {
@@ -243,6 +256,7 @@ button:active {
   padding: 0%;
   display: flex;
   flex-direction: column;
+  margin: 0%;
 }
 
 .skills .items {
@@ -269,18 +283,10 @@ button:active {
   border-top-left-radius: 70px;
 }
 
-.contact-me h1 {
-  color: #fff;
-}
-
-.contact-me h1,
 .contact-me .second-text {
   text-align: center;
   margin-right: 30px;
   margin-left: 30px;
-}
-
-.contact-me .second-text {
   color: #ebebff;
 }
 
@@ -320,37 +326,219 @@ textarea::placeholder {
   line-height: 24px;
   color: #b3bac5;
 }
-.button{
-  display: flex;
-  justify-content: center;
+
+.desktop {
+  display: none;
+}
+
+.about-myself .second-text {
+  color: #344563;
+
+  /* width: 70%; */
 }
 
 @media screen and (min-width: 768px) {
-  .headline-desktop{
+  .headline-desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  header {
+    padding: 0 155px;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+
+    /* margin-right: 120px; */
+  }
+
+  .menu li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .menu li a {
+    text-decoration: none;
+  }
+
   .headline-desktop .container {
     /* border: 1px solid yellow; */
     width: 60%;
+
+    /* margin-bottom: 2%; */
   }
+
   .headline-bg {
     background: url('./img/header-bg-desktop.png'), #fff;
     background-size: contain;
     background-position: 0% 50%;
-    
+    border-bottom-left-radius: 140px;
   }
-  .headline{
-    border: 1px solid black;
+
+  .mobile {
+    display: none;
+  }
+
+  .headline {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
+
     /* align-items: center; */
   }
-  h1{
+
+  h1 {
     /* border:1px solid black; */
     width: 50%;
     margin-top: 289px;
   }
-  
+
+  .Works .card {
+    display: flex;
+    gap: 22px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .Works .left-block {
+    padding: 24px;
+
+    /* padding-right: 46px; */
+    width: 47%;
+  }
+
+  .about-myself h2 {
+    margin-top: 166px;
+  }
+
+  .contact-me h2 {
+    margin-top: 142px;
+  }
+
+  .Works .card h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0%;
+  }
+
+  .Works h3 {
+    border: 1px solid black;
+    margin-bottom: 0%;
+  }
+
+  .Works .card .frame2 {
+    margin: 0%;
+    margin-top: 20px;
+  }
+
+  .skills .items li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px;
+  }
+
+  /* .skills .items li {
+    background-position: 100% 10%, 100% 5.5%, 88% 91.2%, 78% 92%;
+    padding: 12px 12px;
+  } */
+
+  .Works .card .frame2 li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .Works .card p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0%;
+    margin-top: 32px;
+  }
+
+  .Works .card-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .action {
+    margin-top: 15px;
+  }
+
+  .about-myself {
+    display: flex;
+
+    /* padding-left: 50px; */
+    border-top-right-radius: 140px;
+  }
+
+  .about-myself .left-block {
+    /* width: 50%; */
+    margin-left: 118px;
+    margin-right: 24px;
+    width: 40%;
+  }
+
+  .skills .items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skills {
+    margin-top: 166px;
+    width: 60%;
+    margin-right: 117px;
+  }
+
+  .Works {
+    margin-right: 142px;
+    margin-left: 142px;
+  }
+
+  .Works .card img {
+    /* width: 40%;
+    height: 180px; */
+    width: 100%;
+  }
+
+  .snapshoot {
+    /* border: 1px solid black; */
+    width: 47%;
+  }
+
+  .tags {
+    margin: 0%;
+    margin-top: 28px;
+  }
+
+  .contact-me {
+    background: url("./img/contact-form-background-shapes-desktop.png"), #6070ff;
+    border-top-left-radius: 140px;
+    background-size: contain;
+    align-items: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-me form {
+    width: 30%;
+  }
+
+  .contact-me .second-text {
+    width: 32%;
+    margin-bottom: 20px;
+  }
 }
