@@ -423,9 +423,14 @@ textarea::placeholder {
     margin-top: 166px;
   }
 
-  .contact-me h2 {
+  /* .contact-me h2 {
     margin-top: 142px;
   }
+  .contact-me h2:hover {
+    margin-top: 142px;
+    transform: translate(130px);
+    
+  } */
 
   .Works .card h2 {
     font-size: 40px;
@@ -514,6 +519,11 @@ textarea::placeholder {
   .snapshoot {
     /* border: 1px solid black; */
     width: 47%;
+    transition: transform 1.5s;
+  }
+
+  .snapshoot:hover {
+    transform: scale(1.1);
   }
 
   .tags {
@@ -528,9 +538,8 @@ textarea::placeholder {
     align-items: center;
   }
 
-  .button {
-    display: flex;
-    justify-content: center;
+  button {
+    transition-duration: 1.5s;
   }
 
   .contact-me form {
@@ -540,5 +549,25 @@ textarea::placeholder {
   .contact-me .second-text {
     width: 32%;
     margin-bottom: 20px;
+    transition-duration: 1.5s;
+  }
+  .contact-me .second-text:hover{
+    transform: translate(30px);
+  }
+  @keyframes rotateLogo {
+    from{
+      opacity: 0;
+      /* transform: rotate(0deg); */
+      transform: translateX(-200px);
+    }
+    to{
+      transform: translateX(0);
+      /* transform: rotate(360deg); */
+    }
+  }
+  .logo{
+    animation-name: rotateLogo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;         
   }
 }
