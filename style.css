@@ -269,8 +269,11 @@ button:active {
 }
 
 .contact-me {
-  background: url("./img/Ellipse-3.png"), url("./img/Rectangle-4.png"),
-    url("./img/Rectangle-7.png"), url("./img/Ellipse-5.png") #6070ff;
+  background:
+    url("./img/Ellipse-3.png"),
+    url("./img/Rectangle-4.png"),
+    url("./img/Rectangle-7.png"),
+    url("./img/Ellipse-5.png") #6070ff;
 
   /* background-position: 145px 5px; */
   background-position: 100% 10%, 100% 5.5%, 88% 91.2%, 78% 92%;
@@ -430,7 +433,7 @@ textarea::placeholder {
   .contact-me h2:hover {
     margin-top: 142px;
     transform: translate(131px);
-    
+
   } */
 
   .Works .card h2 {
@@ -552,20 +555,26 @@ textarea::placeholder {
     margin-bottom: 20px;
     transition-duration: 1.6s;
   }
+
   .contact-me .second-text:hover {
     transform: translate(30px);
   }
+
   @keyframes rotateLogo {
     from {
       opacity: 0;
+
       /* transform: rotate(0deg); */
       transform: translateX(-201px);
     }
+
     to {
       transform: translateX(0);
+
       /* transform: rotate(360deg); */
     }
   }
+
   .logo {
     animation-name: rotateLogo;
     animation-duration: 1s;
