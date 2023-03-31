@@ -580,4 +580,9 @@ textarea::placeholder {
     animation-duration: 1s;
     animation-timing-function: ease-in;
   }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
 }
