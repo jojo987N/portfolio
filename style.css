@@ -428,7 +428,7 @@ textarea::placeholder {
   }
   .contact-me h2:hover {
     margin-top: 142px;
-    transform: translate(130px);
+    transform: translate(131px);
     
   } */
 
@@ -519,7 +519,7 @@ textarea::placeholder {
   .snapshoot {
     /* border: 1px solid black; */
     width: 47%;
-    transition: transform 1.5s;
+    transition: transform 1.6s;
   }
 
   .snapshoot:hover {
