@@ -2,545 +2,151 @@
 
 - [📖 About the Project](#about-project)
 
-  
-
-  
-
 - [🛠 Built With](#built-with)
-
-  
-
-  
 
 - [Tech Stack](#tech-stack)
 
-  
-
-  
-
 - [Key Features](#key-features)
-
-  
-
-  
 
 - [🚀 Live Demo](#live-demo)
 
-  
-
-  
-
 - [💻 Getting Started](#getting-started)
-
-  
-
-  
 
 - [Setup](#setup)
 
-  
-
-  
-
 - [Prerequisites](#prerequisites)
-
-  
-
-  
 
 - [Install](#install)
 
-  
-
-  
-
 - [Usage](#usage)
-
-  
-
-  
 
 - [Run tests](#run-tests)
 
-  
-
-  
-
 - [Deployment](#triangular_flag_on_post-deployment)
-
-  
-
-  
 
 - [👥 Authors](#authors)
 
-  
-
-  
-
 - [🔭 Future Features](#future-features)
-
-  
-
-  
 
 - [🤝 Contributing](#contributing)
 
-  
-
-  
-
 - [⭐️ Show your support](#support)
-
-  
-
-  
 
 - [🙏 Acknowledgements](#acknowledgements)
 
-  
-
-  
-
 - [❓ FAQ (OPTIONAL)](#faq)
-
-  
-
-  
 
 - [📝 License](#license)
 
-  
 
-  
+# 📖  Portfolio: desktop version
 
-  
-
-# 📖 # # # Portfolio: desktop version
-
-  
-
-  
-
-  
-
-**# # Portfolio: desktop version** is the sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file .
-
-  
-
-  
-
-  
+**Portfolio: desktop version** is the sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file.
 
 ## 🛠 Built With
 
-  
-
-  
-
-  
+- HTML
+- CSS
+- Linters
 
 ### Tech Stack
 
-  
-
-  
-
-  
-
 <details>
-
-  
-
-  
-
-<summary>Client</summary>
-
-  
-
-  
-
-<ul>
-
-  
-
-  
-
-<li><a  href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-
-  
-
-  
-
-</ul>
-
-  
-
-  
-
-<ul>
-
-  
-
-  
-
-<li><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-
-  
-
-  
-
-</ul>
-
-  
-
-  
-
+    <summary>Client</summary>
+        <ul>
+            <li><a  href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+        </ul>
+        <ul>
+            <li><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+        </ul>
 </details>
-
-  
-
-  
-
-  
 
 ### Key Features <a name="key-features"></a>
 
-  
-
-  
-
-  
-
 -  **Desktop Version**
-
-  
-
 -  **Headline**
-
-  
-
 -  **Works Section**
-
-  
-
 -  **About myself**
-- **Contact Form**
-
-  
-
-  
-
-  
+-  **Contact Form**
 
 ## 🚀 Live Demo
 
-  
-
-  
-
-  
-
 - Not yet available
-
-  
-
-  
 
 ## 💻 Getting Started
 
-  
-
-  
-
 To get a local copy up and running, follow these steps.
-
-  
-
-  
-
-  
 
 ### Prerequisites
 
-  
-
-  
-
-  
-
 In order to run this project you need:
 
-  
-
-  
-
-sh
-
-  
-
-  
-
-npm install
-
-  
-
-  
-
-  
+- Web browser.
+- Code editor.
+- Git scm.
 
 ### Setup
 
-  
-
-  
-
-  
-
 Clone this repository to your desired folder:
 
-  
+Run this command: 
 
-  
-
-sh
-
-  
-
-  
-
-cd portfolio
-
-  
-
-  
-
-git clone git@github.com:jojo987N/portfolio.git
-
-  
-
-  
-
-  
-
+```sh
+ cd my-folder
+ git clone git@github.com:jojo987N/portfolio.git
+```
 ### Install
-
-  
-
-  
-
-  
 
 Install this project with:
 
-  
+Run this command:
 
-  
-
-sh
-
-  
-
-  
-
-cd portfolio
-
-  
-
-  
-
-npm install
-
-  
-
-  
-
-  
-
+```sh
+ cd my-folder
+ npm install
+```
 ### Usage
-
-  
-
-  
-
-  
 
 To run the project, execute the following command:
 
-  
-
-  
-
-  
+Open index.html using live server extension.
 
 ### Deployment
 
-  
-
-  
-
-  
-
-You can deploy this project using:
-
-  
-
-  
+> Coming soon
 
 ## 👥 Authors
 
-  
+👤 Narcisse Jemba
 
-  
-
-  
-
-👤 **Author1**
-
-  
-
-  
-
-  
-
-- GitHub: [@jojo987N](https://github.com/jojo987N)
-
-  
-
-  
-
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-
-  
-
-  
-
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-  
-
-  
+- GitHub: [@githubhandle](https://github.com/jojo987N)
+- Twitter: [@JembaNarcisse](https://twitter.com/JembaNarcisse)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/narcisse-jemba-aa9488252/)
 
 ## 🔭 Future Features
 
-  
-
-  
-
-  
-
-- [ ] **Works Page**
-
-  
-
-  
-
-- [ ] **About My Self Page**
-
-  
-
-  
-
-- [ ] **Contact Me Page**
-
-  
-
-  
+- [ ] Fixed Menu top
+- [ ] Card sections animation
+- [ ] Add more styles
 
 ## 🤝 Contributing
 
-  
-
-  
-
 Contributions, issues, and feature requests are welcome!
-
-  
-
-  
-
-  
 
 Feel free to check the [issues page](../../issues/).
 
-  
-
-  
-
 ## ⭐️ Show your support
 
-  
-
-  
+If you like this project just give it a star ⭐️ .
 
 Everybody is welcome to suggest changes in Hello portfolio files.
 
-  
-
-  
-
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
-
-  
 
 ## 🙏 Acknowledgments
 
-  
-
-  
-
-  
-
 I would like to thank Microverse
 
-  
-
-  
-
-## ❓ FAQ (OPTIONAL)
-
-  
-
-  
-
-  
-
--  **[Question_1]**
-
-  
-
-  
-
-  
-
-- Setup Node js
-
-  
-
-  
-
-  
-
--  **[Question_2]**
-
-  
-
-  
-
-  
-
-- Setup Linters
-
-  
-
-  
-
 ## 📝 License
-
-  
-
-  
-
-  
 
 This project is [MIT](./LICENSE.md) licensed.
