@@ -349,7 +349,17 @@ textarea::placeholder {
   }
 
   header {
-    padding: 0 155px;
+    /* padding: 0 155px; */
+    /* border:1px solid black; */
+    position: fixed;
+    top:0;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0px;
+    box-shadow: 0 4px 2px -2px #d9d9d9;
+    z-index: 10;
   }
 
   .desktop {
@@ -387,7 +397,7 @@ textarea::placeholder {
   .headline-bg {
     background: url("./img/header-bg-desktop.png"), #fff;
     background-size: contain;
-    background-position: 0% 50%;
+    background-position: 0% 120%;
     border-bottom-left-radius: 140px;
   }
 
