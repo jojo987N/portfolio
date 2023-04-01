@@ -20,8 +20,6 @@
 
 - [Usage](#usage)
 
-- [Run tests](#run-tests)
-
 - [Deployment](#triangular_flag_on_post-deployment)
 
 - [👥 Authors](#authors)
@@ -31,10 +29,8 @@
 - [🤝 Contributing](#contributing)
 
 - [⭐️ Show your support](#support)
-
+ 
 - [🙏 Acknowledgements](#acknowledgements)
-
-- [❓ FAQ (OPTIONAL)](#faq)
 
 - [📝 License](#license)
 
@@ -63,11 +59,9 @@
 
 ### Key Features <a name="key-features"></a>
 
--  **Desktop Version**
--  **Headline**
--  **Works Section**
--  **About myself**
--  **Contact Form**
+-  Desktop Version
+-  Mobile Version
+-  Contact Form
 
 ## 🚀 Live Demo
 
