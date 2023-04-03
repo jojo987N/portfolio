@@ -1,27 +1,16 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-
-- [🛠 Built With](#built-with)
-
-- [Tech Stack](#tech-stack)
-
-- [Key Features](#key-features)
-
-- [🚀 Live Demo](#live-demo)
-
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-
 - [Setup](#setup)
-
-- [Prerequisites](#prerequisites)
-
-- [Install](#install)
-
-- [Usage](#usage)
-
-- [Deployment](#triangular_flag_on_post-deployment)
-
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 
 - [🔭 Future Features](#future-features)
@@ -35,7 +24,7 @@
 - [📝 License](#license)
 
 
-# 📖  Portfolio: desktop version
+# 📖  Portfolio: desktop version <a name="about-project"></a>
 
 **Portfolio: desktop version** is the sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file.
 
