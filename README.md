@@ -52,11 +52,11 @@
 -  Mobile Version
 -  Contact Form
 
-### 🚀 Live Demo
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not yet available
+- [Live Demo Link](https://jojo987n.github.io/portfolio/)
 
-## 💻 Getting Started
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -98,7 +98,7 @@ Open index.html using live server extension.
 
 > Coming soon
 
-## 👥 Authors
+## 👥 Authors <a name="getting-started"></a>
 
 👤 Narcisse Jemba
 
@@ -106,19 +106,19 @@ Open index.html using live server extension.
 - Twitter: [@JembaNarcisse](https://twitter.com/JembaNarcisse)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/narcisse-jemba-aa9488252/)
 
-## 🔭 Future Features
+## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Fixed Menu top
 - [ ] Card sections animation
 - [ ] Add more styles
 
-## 🤝 Contributing
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## ⭐️ Show your support
+## ⭐️ Show your support <a name="support"></a>
 
 If you like this project just give it a star ⭐️ .
 
@@ -126,10 +126,10 @@ Everybody is welcome to suggest changes in Hello portfolio files.
 
 In order to do it, fork this repository, create a new branch and open a Pull Request from your branch
 
-## 🙏 Acknowledgments
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse
 
-## 📝 License
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
