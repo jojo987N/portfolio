@@ -28,13 +28,13 @@
 
 **Portfolio: desktop version** is the sections of the mobile website project build with Figma template , using HTML and CSS, a mobile first approach, with best practices, Github flow and a descriptive and easy to understand README file.
 
-## 🛠 Built With
+## 🛠 Built With <a name="built-with"></a>
 
 - HTML
 - CSS
 - Linters
 
-### Tech Stack
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
     <summary>Client</summary>
@@ -52,7 +52,7 @@
 -  Mobile Version
 -  Contact Form
 
-## 🚀 Live Demo
+### 🚀 Live Demo
 
 - Not yet available
 
