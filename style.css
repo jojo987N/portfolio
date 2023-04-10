@@ -442,9 +442,6 @@ textarea::placeholder {
     list-style-type: none;
     display: flex;
     gap: 32px;
-
-
-    /* margin-right: 120px; */
   }
 
   .menu li {
