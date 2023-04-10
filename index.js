@@ -10,33 +10,7 @@ window.onload = () => {
     var menu = document.getElementById('menu')
     var hamburger = document.getElementById('hamburger')
     var close = document.getElementById('close')
-    const contents = document.querySelectorAll('.anim')
-
-    const options = {
-        root: null,
-        threshold: 0,
-        rootMargin: "-150px"
-    }
-    const observer = new IntersectionObserver((entries, observer) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-                entry.target.classList.add('section-animation')
-                observer.unobserve(entry.target)
-                return;
-            }
-            entry.target.classList.remove('section-animation')
-
-        })
-
-    }, options);
-
-
-    contents.forEach(content => {
-        observer.observe(content)
-    })
-
+    
     window.onscroll = () => {
 
         if (wn.scrollTop > 50)
@@ -96,48 +70,26 @@ window.onload = () => {
     }
 
 
-
-    // var card = document.createElement('div')
-    // card.classList.add('card', 'anim')
-    // var imgMobile = document.createElement('img');
-    // imgMobile.alt = "Snapshoot Portfolio"
-    // imgMobile.classList.add("mobile")
-    // imgMobile.src = "img/Snapshoot-Portfolio.png"
-    // card.appendChild(imgMobile)
-    // var snapshoot = document.createElement('snapshoot')
-    // snapshoot.classList.add('snapshoot')
-    // card.appendChild(snapshoot)
-    // var imgDesktop = document.createElement('img');
-    // imgDesktop.alt = "Snapshoot Portfolio"
-    // imgDesktop.classList.add("desktop")
-    // imgDesktop.src = "img/Snapshoot-Portfolio-desktop.png"
-    // snapshoot.append(imgDesktop)
-    // var leftBlock = document.createElement('div')
-    // leftBlock.classList.add('left-block')
-    // card.appendChild(leftBlock)
-    // var h2 = document.createElement('h2')
-    // leftBlock.appendChild(h2)
-
-    const card = (image) => {
+    const card = (data) => {
         return `<div class="card anim">
         <img src="img/Snapshoot-Portfolio.png" alt="Snapshoot Portfolio" class="mobile">
         <div class="snapshoot">
-          <img src=${image} alt="Snapshoot Portfolio" class="desktop">
+          <img src=${data.image} alt="Snapshoot Portfolio" class="desktop">
         </div>
         <div class="left-block">
-          <h2>Tonic</h2>
+          <h2>${data.name}</h2>
           <ul class="frame2">
-            <li>CANOPY</li>
+            <li>${data.job.company}</li>
             <li><img src="img/Counter.png" alt="Counter"></li>
-            <li>Back End Dev</li>
+            <li>${data.job.post}</li>
             <li><img src="img/Counter.png" alt="Counter"></li>
-            <li>2015</li>
+            <li>${data.job.year}</li>
           </ul>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          <p>${data.description}</p>
           <ul class="tags">
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JavaScript</li>
+            <li class="tag">${data.technologies[0]}</li>
+            <li class="tag">${data.technologies[1]}</li>
+            <li class="tag">${data.technologies[2]}</li>
           </ul>
           <div class="action">
             <button>See project</button>
@@ -148,12 +100,8 @@ window.onload = () => {
     
     }
 
-    // works.innerHTML = data.map(work  => )
-    works.innerHTML = card('img/Snapshoot-Portfolio-desktop.png')
-
-    works.appendChild(card)
-
-    const data = [
+     
+    const datas = [
         {
             image: "img/Snapshoot-Portfolio-desktop.png",
             name: "Tonic",
@@ -166,4 +114,34 @@ window.onload = () => {
             technologies: ["HTML", "CSS", "JavaScript"]
         }
     ]
+    works.innerHTML = datas.map(data => card(data)).join("")
+
+
+    const contents = document.querySelectorAll('.anim')
+
+    const options = {
+        root: null,
+        threshold: 0,
+        rootMargin: "-150px"
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add('section-animation')
+                observer.unobserve(entry.target)
+                return;
+            }
+            entry.target.classList.remove('section-animation')
+
+        })
+
+    }, options);
+
+
+    contents.forEach(content => {
+        observer.observe(content)
+    })
+
 }
