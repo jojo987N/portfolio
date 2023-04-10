@@ -74,24 +74,29 @@ window.onload = () => {
 
     workLink.onclick = () => {
         menu.classList.add("menu-hide")
+        document.body.classList.remove("no-scroll")
         scrollIntoView(works)
     }
 
     aboutLink.onclick = () => {
         menu.classList.add("menu-hide")
+        document.body.classList.remove("no-scroll")
         scrollIntoView(about)
     }
 
     contactLink.onclick = () => {
         menu.classList.add("menu-hide")
+        document.body.classList.remove("no-scroll")
         scrollIntoView(contact)
 
     }
 
     hamburger.onclick = () => {
         menu.classList.remove("menu-hide")
+        document.body.classList.add("no-scroll")
     }
     close.onclick = () => {
         menu.classList.add("menu-hide")
+        document.body.classList.remove("no-scroll")
     }
 }
