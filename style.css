@@ -134,6 +134,10 @@ h1,
   .menu-hide {
     display: none;
   }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 .hide {
@@ -438,9 +442,6 @@ textarea::placeholder {
     list-style-type: none;
     display: flex;
     gap: 32px;
-
-
-    /* margin-right: 120px; */
   }
 
   .menu li {
