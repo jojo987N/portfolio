@@ -94,4 +94,76 @@ window.onload = () => {
     close.onclick = () => {
         menu.classList.add("menu-hide")
     }
+
+
+
+    // var card = document.createElement('div')
+    // card.classList.add('card', 'anim')
+    // var imgMobile = document.createElement('img');
+    // imgMobile.alt = "Snapshoot Portfolio"
+    // imgMobile.classList.add("mobile")
+    // imgMobile.src = "img/Snapshoot-Portfolio.png"
+    // card.appendChild(imgMobile)
+    // var snapshoot = document.createElement('snapshoot')
+    // snapshoot.classList.add('snapshoot')
+    // card.appendChild(snapshoot)
+    // var imgDesktop = document.createElement('img');
+    // imgDesktop.alt = "Snapshoot Portfolio"
+    // imgDesktop.classList.add("desktop")
+    // imgDesktop.src = "img/Snapshoot-Portfolio-desktop.png"
+    // snapshoot.append(imgDesktop)
+    // var leftBlock = document.createElement('div')
+    // leftBlock.classList.add('left-block')
+    // card.appendChild(leftBlock)
+    // var h2 = document.createElement('h2')
+    // leftBlock.appendChild(h2)
+
+    const card = (image) => {
+        return `<div class="card anim">
+        <img src="img/Snapshoot-Portfolio.png" alt="Snapshoot Portfolio" class="mobile">
+        <div class="snapshoot">
+          <img src=${image} alt="Snapshoot Portfolio" class="desktop">
+        </div>
+        <div class="left-block">
+          <h2>Tonic</h2>
+          <ul class="frame2">
+            <li>CANOPY</li>
+            <li><img src="img/Counter.png" alt="Counter"></li>
+            <li>Back End Dev</li>
+            <li><img src="img/Counter.png" alt="Counter"></li>
+            <li>2015</li>
+          </ul>
+          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          <ul class="tags">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+          <div class="action">
+            <button>See project</button>
+          </div>
+          
+        </div>
+      </div>`
+    
+    }
+
+    // works.innerHTML = data.map(work  => )
+    works.innerHTML = card('img/Snapshoot-Portfolio-desktop.png')
+
+    works.appendChild(card)
+
+    const data = [
+        {
+            image: "img/Snapshoot-Portfolio-desktop.png",
+            name: "Tonic",
+            job : {
+                company: "CANOPY",
+                post : "Back End Dev",
+                year: "2015"
+            },
+            description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+            technologies: ["HTML", "CSS", "JavaScript"]
+        }
+    ]
 }
