@@ -90,7 +90,7 @@ h1,
   margin-top: 12px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .menu {
     position: fixed;
     top: 0;
@@ -912,7 +912,7 @@ textarea::placeholder {
     gap: 5px;
 
     /* padding: 10px 30px 10px 30px; */
-    width: 150px;
+    width: 9em;
     justify-content: center;
   }
 
