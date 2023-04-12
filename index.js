@@ -1,5 +1,5 @@
 window.onload = () => {
-  const elements = document.getElementsByTagName('header');
+  const header = document.querySelector('header');
   const wn = document.documentElement;
   const works = document.getElementById('works');
   const about = document.getElementById('about');
@@ -10,31 +10,13 @@ window.onload = () => {
   const menu = document.getElementById('menu');
   const hamburger = document.getElementById('hamburger');
   const close = document.getElementById('close');
-  const contents = document.querySelectorAll('.anim');
-
-  const options = {
-    root: null,
-    threshold: 0,
-    rootMargin: '-150px',
-  };
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('section-animation');
-        observer.unobserve(entry.target);
-        return;
-      }
-      entry.target.classList.remove('section-animation');
-    });
-  }, options);
-
-  contents.forEach((content) => {
-    observer.observe(content);
-  });
+  const modalDesktop = document.querySelector('.modal-desktop');
+  const headline = document.querySelector('.headline');
+  const closeModal = document.querySelector('.close-modal');
 
   window.onscroll = () => {
-    if (wn.scrollTop > 50) elements[0].classList.add('header-nav');
-    else elements[0].classList.remove('header-nav');
+    if (wn.scrollTop > 50) header.classList.add('header-nav');
+    else header.classList.remove('header-nav');
 
     if (works.offsetTop - wn.scrollTop > 0) workLink.classList.remove('active');
 
@@ -63,28 +45,183 @@ window.onload = () => {
 
   workLink.onclick = () => {
     menu.classList.add('menu-hide');
-    document.body.classList.remove('no-scroll');
     scrollIntoView(works);
   };
 
   aboutLink.onclick = () => {
     menu.classList.add('menu-hide');
-    document.body.classList.remove('no-scroll');
     scrollIntoView(about);
   };
 
   contactLink.onclick = () => {
     menu.classList.add('menu-hide');
-    document.body.classList.remove('no-scroll');
     scrollIntoView(contact);
   };
 
   hamburger.onclick = () => {
     menu.classList.remove('menu-hide');
-    document.body.classList.add('no-scroll');
   };
   close.onclick = () => {
     menu.classList.add('menu-hide');
-    document.body.classList.remove('no-scroll');
   };
+
+  const card = (data) => `<div class="card anim" id=${data.id}>
+        <img src=${data.image.mobile} alt="Snapshoot Portfolio" class="mobile">
+        <div class="snapshoot">
+          <img src=${data.image.desktop} alt="Snapshoot Portfolio" class="desktop">
+        </div>
+        <div class="left-block">
+          <h2>${data.name}</h2>
+          <ul class="frame2">
+            <li>${data.job.company}</li>
+            <li><img src="img/Counter.png" alt="Counter"></li>
+            <li>${data.job.post}</li>
+            <li><img src="img/Counter.png" alt="Counter"></li>
+            <li>${data.job.year}</li>
+          </ul>
+          <p>${data.description}</p>
+          <ul class="tags">
+            <li class="tag">${data.technologies[0]}</li>
+            <li class="tag">${data.technologies[1]}</li>
+            <li class="tag">${data.technologies[2]}</li>
+          </ul>
+          <div class="action">
+         <button class="see-project">See project</button>
+            </div>
+          
+        </div>
+      </div>`;
+
+  const datas = [
+    {
+      id: 0,
+      image: {
+        desktop: 'img/Snapshoot-Portfolio-desktop2.svg',
+        mobile: 'img/Snapshoot-Portfolio2.png',
+      },
+      name: 'Tonic',
+      job: {
+        company: 'CANOPY',
+        post: 'Back End Dev',
+        year: '2015',
+      },
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      live: 'https://jojo987n.github.io/portfolio/',
+      source: 'https://github.com/jojo987N/portfolio',
+    },
+    {
+      id: 1,
+      image: {
+        desktop: 'img/Snapshoot-Portfolio-desktop1.svg',
+        mobile: 'img/Snapshoot-Portfolio1.png',
+      },
+      name: 'Multi-Post Stories',
+      job: {
+        company: 'CANOPY',
+        post: 'Back End Dev',
+        year: '2015',
+      },
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      live: 'https://jojo987n.github.io/portfolio/',
+      source: 'https://github.com/jojo987N/portfolio',
+    },
+    {
+      id: 2,
+      image: {
+        desktop: 'img/Snapshoot-Portfolio-desktop.svg',
+        mobile: 'img/Snapshoot-Portfolio.png',
+      },
+      name: 'Facebook 360',
+      job: {
+        company: 'CANOPY',
+        post: 'Back End Dev',
+        year: '2015',
+      },
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      live: 'https://jojo987n.github.io/portfolio/',
+      source: 'https://github.com/jojo987N/portfolio',
+    },
+    {
+      id: 3,
+      image: {
+        desktop: 'img/Snapshoot-Portfolio-desktop3.svg',
+        mobile: 'img/Snapshoot-Portfolio3.png',
+      },
+      name: 'Uber Navigation',
+      job: {
+        company: 'CANOPY',
+        post: 'Back End Dev',
+        year: '2015',
+      },
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      live: 'https://jojo987n.github.io/portfolio/',
+      source: 'https://github.com/jojo987N/portfolio',
+    },
+  ];
+
+  works.innerHTML = datas.map((data) => card(data)).join('');
+
+  document.querySelectorAll('.see-project').forEach((button, i) => {
+    button.onclick = () => {
+      modalDesktop.classList.remove('hide');
+      document.body.classList.add('no-scroll');
+      window.scrollTo(0, 0);
+      header.classList.add('blur');
+      headline.classList.add('blur-bg');
+      document.querySelector('.title-modal').innerHTML = datas[i].name;
+      modalDesktop.id = i;
+      if (window.screen.width > 375) document.querySelector('.image-modal').src = datas[i].image.desktop;
+      else document.querySelector('.image-modal').src = datas[i].image.mobile;
+    };
+    closeModal.onclick = () => {
+      modalDesktop.classList.add('hide');
+      document.querySelectorAll('.card')[i].scrollIntoView();
+      header.classList.remove('blur');
+      document.body.classList.remove('no-scroll');
+      headline.classList.remove('blur-bg');
+      const card = [...document.querySelectorAll('.card')].find((card) => card.id === modalDesktop.id);
+      const y = card.getBoundingClientRect().top + window.pageYOffset - 150;
+      window.scrollTo({ top: y, behavior: 'auto' });
+    };
+  });
+
+  document.querySelectorAll('.see-live').forEach((button, i) => {
+    button.onclick = () => {
+      window.open(datas[i].live, '_blank');
+    };
+  });
+
+  document.querySelectorAll('.see-source').forEach((button, i) => {
+    button.onclick = () => {
+      window.open(datas[i].source, '_blank');
+    };
+  });
+
+  document.querySelectorAll('.card').forEach((card, i) => i % 2 !== 0 && card.classList.add('card-reverse'));
+
+  const contents = document.querySelectorAll('.anim');
+
+  const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: '-150px',
+  };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('section-animation');
+        observer.unobserve(entry.target);
+        return;
+      }
+      entry.target.classList.remove('section-animation');
+    });
+  }, options);
+
+  contents.forEach((content) => {
+    observer.observe(content);
+  });
 };
