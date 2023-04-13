@@ -978,6 +978,7 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  color: red;
 }
 @keyframes h-shaking {
   0% { transform: translateX(0) }
