@@ -96,7 +96,7 @@ Open index.html using live server extension.
 
 ### Deployment
 
-> Coming soon
+- [Live Demo Link](https://jojo987n.github.io/portfolio/)
 
 ## 👥 Authors <a name="getting-started"></a>
 

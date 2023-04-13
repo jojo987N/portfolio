@@ -224,4 +224,38 @@ window.onload = () => {
   contents.forEach((content) => {
     observer.observe(content);
   });
+
+  const email = document.querySelector('.email');
+  const emailError = document.querySelector('.email-error');
+  const error = 'Email has to be in lower case';
+
+  const shaking = (element) => {
+    element.classList.remove('shaking');
+    setTimeout(() => element.classList.add('shaking'), 0);
+  };
+
+  email.onkeyup = (e) => {
+    emailError.textContent = e.target.value;
+    const val = e.target.value.replace(/[^a-z]/gi, '');
+    const last = val.slice(-1);
+
+    if (last.toUpperCase() === last && last !== '') {
+      emailError.textContent = error;
+
+      shaking(emailError);
+    } else if (val.match(/[A-Z]/)) {
+      emailError.textContent = error;
+      shaking(emailError);
+    } else emailError.textContent = '';
+  };
+
+  const form = document.querySelector('form');
+
+  form.onsubmit = () => {
+    if (emailError.textContent) {
+      emailError.textContent = error;
+      shaking(emailError);
+      return false;
+    } return true;
+  };
 };
