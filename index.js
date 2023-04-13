@@ -225,17 +225,12 @@ window.onload = () => {
     observer.observe(content);
   });
 
-  //   document.querySelector("input").onchange = () => {
-  //     alert("hi")
-  //   }
-
   const email = document.querySelector('.email');
   const emailError = document.querySelector('.email-error');
   const error = 'Email has to be in lower case';
 
   const shaking = (element) => {
     element.classList.remove('shaking');
-    // void element.offsetWidth;
     setTimeout(() => element.classList.add('shaking'), 0);
   };
 
