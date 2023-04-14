@@ -813,7 +813,6 @@ textarea::placeholder {
     justify-content: center;
   }
 
-
   .active {
     border-bottom: 1px solid black;
   }
