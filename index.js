@@ -174,7 +174,7 @@ window.onload = () => {
       headline.classList.add('blur-bg');
       document.querySelector('.title-modal').innerHTML = datas[i].name;
       modalDesktop.id = i;
-      if (window.screen.width > 375) document.querySelector('.image-modal').src = datas[i].image.desktop;
+      if (window.screen.width > 768) document.querySelector('.image-modal').src = datas[i].image.desktop;
       else document.querySelector('.image-modal').src = datas[i].image.mobile;
     };
     closeModal.onclick = () => {
@@ -228,6 +228,7 @@ window.onload = () => {
   const email = document.querySelector('.email');
   const emailError = document.querySelector('.email-error');
   const error = 'Email has to be in lower case';
+  const name = document.querySelector('.name');
 
   const shaking = (element) => {
     element.classList.remove('shaking');
@@ -249,6 +250,29 @@ window.onload = () => {
     } else emailError.textContent = '';
   };
 
+  const reset = document.querySelector(".reset")
+  const button = document.getElementById("button")
+  
+  if (localStorage.getItem('formInputs')){
+    button.classList.add("button-reset")
+    reset.classList.remove("reset")
+    let formInputs =JSON.parse(localStorage.getItem('formInputs'))
+    email.value = formInputs.email
+    name.value = formInputs.name
+  }else{
+    reset.classList.add("reset")
+  }
+
+  reset.onclick = () => {
+    localStorage.removeItem("formInputs");
+    name.value = ""
+    email.value = "";
+    button.classList.remove("button-reset")
+    reset.classList.add("reset")
+
+  }
+  
+
   const form = document.querySelector('form');
 
   form.onsubmit = () => {
@@ -256,6 +280,11 @@ window.onload = () => {
       emailError.textContent = error;
       shaking(emailError);
       return false;
-    } return true;
+    }
+    localStorage.setItem('formInputs', JSON.stringify({
+      name: name.value,
+      email: email.value,
+    }));
+    return true;
   };
 };

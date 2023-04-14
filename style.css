@@ -812,6 +812,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
   }
+ 
 
   .active {
     border-bottom: 1px solid black;
@@ -981,6 +982,13 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 20px;
   color: red;
+}
+
+.button-reset{
+  justify-content: center;
+}
+.reset{
+  display: none;
 }
 
 @keyframes h-shaking {
