@@ -984,7 +984,7 @@ textarea::placeholder {
 }
 
 .button-reset {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .reset {
