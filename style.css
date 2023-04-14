@@ -983,6 +983,14 @@ textarea::placeholder {
   color: red;
 }
 
+.button-reset {
+  justify-content: space-between;
+}
+
+.reset {
+  display: none;
+}
+
 @keyframes h-shaking {
   0% { transform: translateX(0); }
   25% { transform: translateX(5px); }

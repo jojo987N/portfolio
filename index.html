@@ -87,14 +87,15 @@
       </p>
       <form class="form" action="https://formspree.io/f/xnqyoooy" method="post">
          
-          <input type="text" name="name" placeholder="Enter your name" required maxlength="30">
+          <input class="name" type="text" name="name" placeholder="Enter your name" required maxlength="30">
          
         <div class="email-box">
           <input class="email" type="email" name="email" placeholder="Enter your email" required >
           <span class="email-error"></span>
         </div>
         <textarea name="message" placeholder="Write your message here..." rows="10" maxlength="500" required></textarea>
-        <div class="button">
+        <div class="button" id="button">
+          <button class="reset" type="button">Reset</button>
           <button type="submit">Get in touch</button>
         </div>
 
