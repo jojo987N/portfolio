@@ -812,7 +812,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
   }
- 
+
 
   .active {
     border-bottom: 1px solid black;
@@ -984,10 +984,11 @@ textarea::placeholder {
   color: red;
 }
 
-.button-reset{
+.button-reset {
   justify-content: center;
 }
-.reset{
+
+.reset {
   display: none;
 }
 

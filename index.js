@@ -250,28 +250,26 @@ window.onload = () => {
     } else emailError.textContent = '';
   };
 
-  const reset = document.querySelector(".reset")
-  const button = document.getElementById("button")
-  
-  if (localStorage.getItem('formInputs')){
-    button.classList.add("button-reset")
-    reset.classList.remove("reset")
-    let formInputs =JSON.parse(localStorage.getItem('formInputs'))
-    email.value = formInputs.email
-    name.value = formInputs.name
-  }else{
-    reset.classList.add("reset")
+  const reset = document.querySelector('.reset');
+  const button = document.getElementById('button');
+
+  if (localStorage.getItem('formInputs')) {
+    button.classList.add('button-reset');
+    reset.classList.remove('reset');
+    const formInputs = JSON.parse(localStorage.getItem('formInputs'));
+    email.value = formInputs.email;
+    name.value = formInputs.name;
+  } else {
+    reset.classList.add('reset');
   }
 
   reset.onclick = () => {
-    localStorage.removeItem("formInputs");
-    name.value = ""
-    email.value = "";
-    button.classList.remove("button-reset")
-    reset.classList.add("reset")
-
-  }
-  
+    localStorage.removeItem('formInputs');
+    name.value = '';
+    email.value = '';
+    button.classList.remove('button-reset');
+    reset.classList.add('reset');
+  };
 
   const form = document.querySelector('form');
 
