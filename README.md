@@ -1,5 +1,5 @@
 <p align="center" >
-<a href="https://jojo987n.github.io/portfolio/#"><img src="img/portfolio-scroll-frame.gif" alt="Portfolio Scrolling" style="width:80%;"/></a>
+<a href="https://jojo987n.github.io/portfolio/#"><img src="img/portfolio-scroll-frame.gif" alt="Portfolio Scrolling" style=""/></a>
 </p>
 # 📗 Table of Contents
 
