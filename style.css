@@ -14,7 +14,7 @@ header {
 }
 
 .section-animation {
-  animation: sectionAnimation 2s;
+  animation: sectionAnimation 2s forwards;
 }
 
 header .logo {
@@ -946,6 +946,9 @@ textarea::placeholder {
     margin-top: 20px;
     color: #ebecf0;
   }
+  .padding-scroll{
+    padding-top: 150px;
+  }
 }
 
 .contact-me .email-box {
@@ -959,7 +962,7 @@ textarea::placeholder {
     opacity: 0;
 
     /* transform: rotateX(-10deg); */
-    transform: translateY(50px);
+    transform: translateY(80px);
   }
 
   to {
@@ -997,4 +1000,8 @@ textarea::placeholder {
   50% { transform: translateX(-5px); }
   75% { transform: translateX(5px); }
   100% { transform: translateX(0); }
+}
+
+.anim{
+  opacity: 0;
 }
