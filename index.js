@@ -14,24 +14,57 @@ window.onload = () => {
   const headline = document.querySelector('.headline');
   const closeModal = document.querySelector('.close-modal');
 
+  const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: '-150px',
+  };
+
+  const sections = document.querySelectorAll('section');
+
+  const observerSection = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.className === 'Works') {
+          aboutLink.classList.remove('active');
+          contactLink.classList.remove('active');
+          workLink.classList.add('active');
+        } else if (entry.target.className === 'about-myself') {
+          workLink.classList.remove('active');
+          contactLink.classList.remove('active');
+          aboutLink.classList.add('active');
+        } else if (entry.target.className === 'contact') {
+          aboutLink.classList.remove('active');
+          contactLink.classList.add('active');
+        } else {
+          workLink.classList.remove('active');
+        }
+      }
+    });
+  }, options);
+
+  sections.forEach((section) => {
+    observerSection.observe(section);
+  });
+
   window.onscroll = () => {
     if (wn.scrollTop > 50) header.classList.add('header-nav');
     else header.classList.remove('header-nav');
 
-    if (works.offsetTop - wn.scrollTop > 0) workLink.classList.remove('active');
+    // if (works.offsetTop - wn.scrollTop > 0) workLink.classList.remove('active');
 
-    else if (about.offsetTop - wn.scrollTop > 0) {
-      aboutLink.classList.remove('active');
-      contactLink.classList.remove('active');
-      workLink.classList.add('active');
-    } else if (contact.offsetTop - wn.scrollTop > 0) {
-      workLink.classList.remove('active');
-      contactLink.classList.remove('active');
-      aboutLink.classList.add('active');
-    } else {
-      aboutLink.classList.remove('active');
-      contactLink.classList.add('active');
-    }
+    // else if (about.offsetTop - wn.scrollTop > 0) {
+    //   aboutLink.classList.remove('active');
+    //   contactLink.classList.remove('active');
+    //   workLink.classList.add('active');
+    // } else if (contact.offsetTop - wn.scrollTop > 0) {
+    // workLink.classList.remove('active');
+    // contactLink.classList.remove('active');
+    // aboutLink.classList.add('active');
+    // } else {
+    // aboutLink.classList.remove('active');
+    // contactLink.classList.add('active');
+    // }
   };
 
   const scrollIntoView = (element) => {
@@ -43,19 +76,37 @@ window.onload = () => {
     }, 100);
   };
 
+  const scrollIntoView1 = (element, padding) => {
+    const y = element.getBoundingClientRect().top + window.pageYOffset - padding;
+    // window.scrollTo({ top: y, behavior: 'smooth' });
+    $('html, body').animate({ scrollTop: y }, 300);
+  };
+
   workLink.onclick = () => {
     menu.classList.add('menu-hide');
-    scrollIntoView(works);
+    if (window.screen.width <= 768) scrollIntoView(works);
+    else {
+      scrollIntoView1(works, 150);
+      // scrollIntoView(works);
+      // works.style.paddingTop = '150px'
+      // works.classList.add("padding-scroll")
+      // setTimeout(() => works.classList.add("padding-scroll"), 0);
+    }
   };
 
   aboutLink.onclick = () => {
     menu.classList.add('menu-hide');
-    scrollIntoView(about);
+    // scrollIntoView(about);
+    // $('html, body').animate({ scrollTop: '350px' }, 300);
+    // $('html, body').animate({ scrollTop: '350px' }, 300);
+    scrollIntoView1(about, 0);
   };
 
   contactLink.onclick = () => {
     menu.classList.add('menu-hide');
-    scrollIntoView(contact);
+    // scrollIntoView(contact);
+    if (window.screen.width <= 768) scrollIntoView(contact);
+    else scrollIntoView1(contact, 20);
   };
 
   hamburger.onclick = () => {
@@ -205,11 +256,6 @@ window.onload = () => {
 
   const contents = document.querySelectorAll('.anim');
 
-  const options = {
-    root: null,
-    threshold: 0,
-    rootMargin: '-150px',
-  };
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
