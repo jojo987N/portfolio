@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="background-color:black">
 <a href="https://jojo987n.github.io/portfolio/#"><img src="img/portfolio-scroll.gif" alt="Portfolio Scrolling" style="width:50%;"/></a>
 </p>
 # 📗 Table of Contents
