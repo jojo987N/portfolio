@@ -22,7 +22,7 @@ window.onload = () => {
 
   const sections = document.querySelectorAll('section');
 
-  const observerSection = new IntersectionObserver((entries, observer) => {
+  const observerSection = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.className === 'Works') {
@@ -76,7 +76,7 @@ window.onload = () => {
     }, 100);
   };
 
-  const _scrollIntoView = (element, padding) => {
+  const scrollIntoView1 = (element, padding) => {
     const y = element.getBoundingClientRect().top + window.pageYOffset - padding;
     // window.scrollTo({ top: y, behavior: 'smooth' });
     $('html, body').animate({ scrollTop: y }, 300);
@@ -86,7 +86,7 @@ window.onload = () => {
     menu.classList.add('menu-hide');
     if (window.screen.width <= 768) scrollIntoView(works);
     else {
-      _scrollIntoView(works, 150);
+      scrollIntoView1(works, 150);
       // scrollIntoView(works);
       // works.style.paddingTop = '150px'
       // works.classList.add("padding-scroll")
@@ -99,14 +99,14 @@ window.onload = () => {
     // scrollIntoView(about);
     // $('html, body').animate({ scrollTop: '350px' }, 300);
     // $('html, body').animate({ scrollTop: '350px' }, 300);
-    _scrollIntoView(about, 0);
+    scrollIntoView1(about, 0);
   };
 
   contactLink.onclick = () => {
     menu.classList.add('menu-hide');
     // scrollIntoView(contact);
     if (window.screen.width <= 768) scrollIntoView(contact);
-    else _scrollIntoView(contact, 20);
+    else scrollIntoView1(contact, 20);
   };
 
   hamburger.onclick = () => {

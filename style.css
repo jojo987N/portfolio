@@ -946,7 +946,8 @@ textarea::placeholder {
     margin-top: 20px;
     color: #ebecf0;
   }
-  .padding-scroll{
+
+  .padding-scroll {
     padding-top: 150px;
   }
 }
@@ -1002,6 +1003,6 @@ textarea::placeholder {
   100% { transform: translateX(0); }
 }
 
-.anim{
+.anim {
   opacity: 0;
 }
