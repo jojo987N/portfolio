@@ -164,7 +164,7 @@ h1,
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 22px;
     color: #172b4d;
     margin: 0;
 
@@ -261,6 +261,14 @@ h1,
   .close-modal {
     margin-right: 7px;
   }
+
+  .Works .card img {
+    width: 100%;
+  }
+
+  .Works .card h2 {
+    font-size: 22px;
+  }
 }
 
 .hide {
@@ -308,7 +316,8 @@ h1,
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+
+  /* font-size: 32px; */
   color: #172b4d;
 
   /* width: 70%; */
@@ -751,6 +760,13 @@ textarea::placeholder {
     /* border: 1px solid black; */
     width: 47%;
     transition: transform 1.6s;
+
+    /* background: red;
+    overflow: hidden; */
+
+    /* border: 1px solid black; */
+
+    /* border-radius: 5px; */
   }
 
   .snapshoot:hover {
