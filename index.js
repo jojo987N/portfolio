@@ -147,19 +147,28 @@ window.onload = () => {
     {
       id: 0,
       image: {
-        desktop: 'img/Snapshoot-Portfolio-desktop2.svg',
+        // desktop: 'img/Snapshoot-Portfolio-desktop2.svg',
+        desktop: 'img/First-capstone-round1.png',
         mobile: 'img/Snapshoot-Portfolio2.png',
       },
-      name: 'Tonic',
+      name: 'Conference website',
       job: {
-        company: 'CANOPY',
-        post: 'Back End Dev',
-        year: '2015',
+        company: 'Microverse',
+        post: 'Full Stack Dev',
+        year: '2023',
       },
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      description: 'An online website follow some design guidelines, medium-fidelity wireframes to create a UI.',
+      fullDescription:  `<ul>
+        <li>Understand how to use medium-fidelity wireframes to create a UI.</li>
+        <li>Use Flexbox to place elements in the page.</li>
+        <li>UIs adaptable to different screen sizes using media queries.</li>
+        <li>Use semantic HTML tags. Use CSS box model.</li>
+        <li>Use images and backgrounds to enhance the look of a website.</li>
+        <li>Use JavaScript to manipulate DOM elements.</li>
+        </ul>`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      live: 'https://jojo987n.github.io/portfolio/',
-      source: 'https://github.com/jojo987N/portfolio',
+      live: 'https://jojo987n.github.io/first-capstone/',
+      source: 'https://github.com/jojo987N/first-capstone',
     },
     {
       id: 1,
@@ -219,6 +228,11 @@ window.onload = () => {
   document.querySelectorAll('.see-project').forEach((button, i) => {
     button.onclick = () => {
       modalDesktop.classList.remove('hide');
+
+      document.querySelector('.modal .description').innerHTML = datas[i].fullDescription
+
+
+
       document.body.classList.add('no-scroll');
       window.scrollTo(0, 0);
       header.classList.add('blur');
