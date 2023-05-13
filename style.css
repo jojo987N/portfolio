@@ -265,6 +265,7 @@ h1,
   .Works .card img {
     width: 100%;
   }
+
   .Works .card h2 {
     font-size: 22px;
   }
@@ -315,6 +316,7 @@ h1,
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
+
   /* font-size: 32px; */
   color: #172b4d;
 
@@ -758,12 +760,15 @@ textarea::placeholder {
     /* border: 1px solid black; */
     width: 47%;
     transition: transform 1.6s;
+
     /* background: red;
     overflow: hidden; */
+
     /* border: 1px solid black; */
+
     /* border-radius: 5px; */
   }
-  
+
   .snapshoot:hover {
     transform: scale(1.1);
   }

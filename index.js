@@ -159,7 +159,7 @@ window.onload = () => {
         year: '2023',
       },
       description: 'An online website follow some design guidelines, medium-fidelity wireframes to create a UI.',
-      fullDescription:  `<ul>
+      fullDescription: `<ul>
         <li>Understand how to use medium-fidelity wireframes to create a UI.</li>
         <li>Use Flexbox to place elements in the page.</li>
         <li>UIs adaptable to different screen sizes using media queries.</li>
@@ -230,9 +230,7 @@ window.onload = () => {
     button.onclick = () => {
       modalDesktop.classList.remove('hide');
 
-      document.querySelector('.modal .description').innerHTML = datas[i].fullDescription
-
-
+      document.querySelector('.modal .description').innerHTML = datas[i].fullDescription;
 
       document.body.classList.add('no-scroll');
       window.scrollTo(0, 0);
