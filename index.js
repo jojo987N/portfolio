@@ -149,7 +149,8 @@ window.onload = () => {
       image: {
         // desktop: 'img/Snapshoot-Portfolio-desktop2.svg',
         desktop: 'img/First-capstone-round1.png',
-        mobile: 'img/Snapshoot-Portfolio2.png',
+        // mobile: 'img/Snapshoot-Portfolio2.png',
+        mobile: 'img/First-capstone-round1.png',
       },
       name: 'Conference website',
       job: {
